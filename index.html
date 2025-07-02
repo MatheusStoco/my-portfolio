@@ -120,40 +120,42 @@
             <h2 class="text-3xl font-bold text-center mb-12">Habilidades Técnicas</h2>
             <div class="max-w-4xl mx-auto">
                 <div class="flex flex-wrap justify-center items-center gap-4 md:gap-8">
-                    <!-- Habilidades do seu currículo -->
-                    <div class="text-center p-4 bg-white shadow-md rounded-lg">
-                        <p class="font-semibold">HTML</p>
-                    </div>
-                    <div class="text-center p-4 bg-white shadow-md rounded-lg">
-                        <p class="font-semibold">CSS</p>
-                    </div>
-                    <div class="text-center p-4 bg-white shadow-md rounded-lg">
-                        <p class="font-semibold">JavaScript/TypeScript</p>
-                    </div>
-                    <div class="text-center p-4 bg-white shadow-md rounded-lg">
-                        <p class="font-semibold">Python</p>
-                    </div>
-                    <div class="text-center p-4 bg-white shadow-md rounded-lg">
-                        <p class="font-semibold">C e C++</p>
-                    </div>
-                    <div class="text-center p-4 bg-white shadow-md rounded-lg">
-                        <p class="font-semibold">Hardware e Redes</p>
-                    </div>
-                     <div class="text-center p-4 bg-white shadow-md rounded-lg">
-                        <p class="font-semibold">Pacote Office</p>
-                    </div>
+                    <div class="text-center p-4 bg-white shadow-md rounded-lg"><p class="font-semibold">HTML</p></div>
+                    <div class="text-center p-4 bg-white shadow-md rounded-lg"><p class="font-semibold">CSS</p></div>
+                    <div class="text-center p-4 bg-white shadow-md rounded-lg"><p class="font-semibold">JavaScript/TypeScript</p></div>
+                    <div class="text-center p-4 bg-white shadow-md rounded-lg"><p class="font-semibold">Python</p></div>
+                    <div class="text-center p-4 bg-white shadow-md rounded-lg"><p class="font-semibold">C e C++</p></div>
+                    <div class="text-center p-4 bg-white shadow-md rounded-lg"><p class="font-semibold">Hardware e Redes</p></div>
+                    <div class="text-center p-4 bg-white shadow-md rounded-lg"><p class="font-semibold">Pacote Office</p></div>
                 </div>
             </div>
         </section>
 
-
         <!-- ========== SEÇÃO CONTATO ========== -->
-        <section id="contato" class="my-24 md:my-32 text-center">
-            <h2 class="text-3xl font-bold mb-4">Vamos Conversar?</h2>
-            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Estou sempre aberto para novas oportunidades e colaborações. Se você tem um projeto em mente ou apenas quer dizer olá, sinta-se à vontade para entrar em contato!</p>
-            <a href="mailto:mstoco06@gmail.com" class="inline-block bg-accent-color text-white text-lg font-medium px-8 py-4 rounded-lg hover:opacity-90 transition-opacity duration-300">
-                Mande um E-mail
-            </a>
+        <section id="contato" class="my-24 md:my-32">
+            <h2 class="text-3xl font-bold text-center mb-4">Vamos Conversar?</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto text-center">Estou sempre aberto para novas oportunidades e colaborações. Se você tem um projeto em mente ou apenas quer dizer olá, preencha o formulário abaixo.</p>
+            
+            <form id="contact-form" class="max-w-xl mx-auto" action="https://formspree.io/f/myzjorjw" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2 text-left">Nome</label>
+                    <input type="text" id="name" name="name" required class="form-input">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2 text-left">E-mail</label>
+                    <input type="email" id="email" name="email" required class="form-input">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2 text-left">Mensagem</label>
+                    <textarea id="message" name="message" rows="4" required class="form-textarea"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-accent-color text-white text-lg font-medium px-8 py-3 rounded-lg hover:opacity-90 transition-all duration-300 w-full sm:w-auto">
+                        Enviar Mensagem
+                    </button>
+                </div>
+            </form>
+            <div id="form-status" class="mt-6 text-center"></div>
         </section>
 
     </main>
